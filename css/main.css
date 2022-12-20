@@ -2,4 +2,44 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    /* margin-bottom: 10%; */
+}
+
+.header{
+    background: rgb(41,37,110);
+    background: linear-gradient(90deg, rgba(41,37,110,1) 0%, rgba(87,87,217,1) 53%, rgba(9,86,102,1) 100%);
+    color: white;
+}
+.header a{
+    color: white;
+    line-height: 200%;
+}
+.center{
+    text-align: center;
+}
+.header h1{
+    font-weight: 900;
+}
+
+.mobilefont{
+    font-size: 0.8rem;
+    line-height: 200%;
+}
+
+.school{
+    font-size: 0.8rem;
+    /* line-height: 150%; */
+}
+.date{
+    font-size: 0.6rem;
+}
+.custompadding{
+    padding-left: 3%;
+}
+a:hover{
+    background: rgb(41,37,110);
+    border-radius: 3px;
+    padding: 1%;
+    /* margin: 0% 2% 0% 5%; */
+    color: white;
 }
