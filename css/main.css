@@ -7,12 +7,14 @@
 
 .header{
     background: rgb(41,37,110);
-    background: linear-gradient(90deg, rgba(41,37,110,1) 0%, rgba(87,87,217,1) 53%, rgba(9,86,102,1) 100%);
+    /* background: linear-gradient(90deg, rgba(41,37,110,1) 0%, rgba(87,87,217,1) 53%, rgba(9,86,102,1) 100%); */
     color: white;
 }
 .header a{
     color: white;
     line-height: 200%;
+    padding: 0 0 0 3%;
+    border-bottom: 1px solid rgb(26, 24, 24, 0.5);
 }
 .center{
     text-align: center;
@@ -36,10 +38,16 @@
 .custompadding{
     padding-left: 3%;
 }
+.footer{
+    background: rgb(45, 44, 66);
+    color: white;
+}
+.footer a{
+    color: white;
+    line-height: 200%;
+}
 a:hover{
     background: rgb(41,37,110);
-    border-radius: 3px;
-    padding: 1%;
-    /* margin: 0% 2% 0% 5%; */
+    border-radius: 8px;
     color: white;
 }
