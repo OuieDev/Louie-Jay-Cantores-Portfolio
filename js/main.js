@@ -6,8 +6,8 @@ $(window).scroll(function () {
   // Get the current scroll position  
   var scrollPosition = $(window).scrollTop(); 
   // Change the background color based on the scroll position
-  if (scrollPosition > 500) {
-    $('.header').css({'background-color': 'rgb(45, 44, 66, 0.8)','background': 'rgb(45, 44, 66, 0.8)', 'transition': 'background-color 0.5s ease'}); 
+  if (scrollPosition > 200) {
+    $('.header').css({'background-color': 'rgb(45, 44, 66, 0.8)','background': 'rgb(45, 44, 66, 0.8)', 'transition': 'background-color 0.5s ease',}); 
   }
   else {
     $('.header').css({'background-color': 'rgb(41,37,110);', 'transition': 'background-color 0.5s ease', 'background': 'linear-gradient(90deg, rgba(41,37,110,1) 0%, rgba(87,87,217,1) 53%, rgba(9,86,102,1) 100%)'}); 
@@ -20,15 +20,28 @@ $(window).scroll(function () {
     if(i < text.length){
       $('#louie').append(text.charAt(i));
       i++;
-      setTimeout(type, 300);
+      setTimeout(type, 250);
     }
+    function del(){
+      if(i <= text.length){
+      $('.ispan').html(''); //clear text before typing
+      }
   }
-  setTimeout(type, 500);
+  del();
+  }
+  setTimeout(type, 0);
+
+//para sa animation sang profile
+$('.floatingimage').animate({
+  left: "+=10px",
+  opacity: 1
+}, 1500);
+
 //para sa about me
     $("#aboutmeN").click(function(){
         
         $('html, body').animate({
-          scrollTop: $('#aboutmeC').offset().top - 100
+          scrollTop: $('#aboutmeC').offset().top - 300
         }, 1500);
     });
 //para sa resume
@@ -53,11 +66,6 @@ $(window).scroll(function () {
                     }
                 }
                 setTimeout(type, 1000);
-
-                $(this).prop('disabled', true);
-                setTimeout(function(){
-                    $('#resumeN').prop('disabled', false);
-                }, 2000);
     });
 //para sa project
     $("#projectsN").click(function(){
@@ -81,11 +89,6 @@ $(window).scroll(function () {
                     }
                 }
                 setTimeout(type, 500);
-
-                $(this).prop('disabled', true);
-                setTimeout(function(){
-                    $('#projectsN').prop('disabled', false);
-                }, 2000);
     });
 
 //para sa testimonials
@@ -121,9 +124,7 @@ $(window).scroll(function () {
                     return true;
                 }); 
                 }
-                setTimeout(type, 1500);
-                
-                
+                setTimeout(type, 1500);   
     });
 
 });
