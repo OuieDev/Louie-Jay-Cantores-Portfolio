@@ -64,7 +64,8 @@
     text-align: center;
 }
 .indent{
-        text-indent: 5%;
+    text-indent: 5%;
+    line-height: 1.6;
 }
 .header h1{
     font-weight: 900;
