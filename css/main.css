@@ -64,6 +64,9 @@
 .center{
     text-align: center;
 }
+.indent{
+        text-indent: 5%;
+}
 .header h1{
     font-weight: 900;
 }
