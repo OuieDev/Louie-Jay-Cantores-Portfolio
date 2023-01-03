@@ -127,9 +127,23 @@
     padding: 15%;
     width: 100%;
     border-radius: 25px 25px 0px 25px;
-
 }
-
+.awards{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.awards{
+    display: block;
+    padding: 5%;
+}
+.service h5{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.service h3{
+    text-align: center;
+}
 
 @media screen and (min-width: 769px) { 
     .header a{
@@ -157,6 +171,18 @@
     }
     .card:hover{
         transform: scale(1.2);
+    }
+    .awards{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .service h5{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .service h3{
+        text-align: left;
     }
 }
 @media screen and (min-width: 1000px) { 
