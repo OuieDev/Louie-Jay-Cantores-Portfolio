@@ -59,7 +59,6 @@
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
     transition: all 1s ease-in-out;
-    
 }
 .center{
     text-align: center;
@@ -70,7 +69,6 @@
 .header h1{
     font-weight: 900;
 }
-
 .mobilefont{
     font-size: 0.8rem;
     line-height: 200%;
@@ -169,7 +167,9 @@
         font-size: 1rem;
         /* margin-bottom: 10%; */
     }
-
+    .hi{
+        margin-top: 8%;
+    }
 }
 
 @media screen and (max-width: 1097px) { 
