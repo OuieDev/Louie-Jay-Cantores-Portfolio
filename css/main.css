@@ -221,3 +221,9 @@ body {
         
     }
 }
+
+@media screen and (min-width: 1580px) { 
+    body{
+        overflow-x: hidden
+    }
+}
