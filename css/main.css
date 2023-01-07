@@ -7,11 +7,11 @@
 body {
     background-color: rgb(16, 16, 16, 0.9)  !important;
 }
+
 .wrapper{
     margin: 0px;
     padding: 0px;
 }
-
 .header{
     background: rgb(41,37,110);
     /* background: linear-gradient(90deg, rgba(41,37,110,1) 0%, rgba(87,87,217,1) 53%, rgba(9,86,102,1) 100%); */
@@ -146,6 +146,12 @@ body {
     text-align: center;
 }
 
+
+/* end of mobile view */
+
+
+/* minimum width */
+
 @media screen and (min-width: 769px) { 
     .header a{
         border-bottom: none;
@@ -186,6 +192,7 @@ body {
         text-align: left;
     }
 }
+
 @media screen and (min-width: 1000px) { 
     .header a{
         font-size: 1rem;
@@ -200,17 +207,14 @@ body {
     }
 }
 
-@media screen and (max-width: 1097px) { 
-    .floatingimage{
-        margin-right: 35%;
-        margin-bottom: 10%;
-    }
-    .floatingimage img{
-        height: 16rem;
-        width: 16rem;
-        transition: all 0.3s ease-in-out;
+@media screen and (min-width: 1580px) { 
+    body{
+        overflow-x: hidden
     }
 }
+
+
+/* max width */
 
 @media screen and (max-width: 766px) { 
     .floatingimage{
@@ -221,9 +225,14 @@ body {
         
     }
 }
-
-@media screen and (min-width: 1580px) { 
-    body{
-        overflow-x: hidden
+@media screen and (max-width: 1097px) { 
+    .floatingimage{
+        margin-right: 35%;
+        margin-bottom: 10%;
+    }
+    .floatingimage img{
+        height: 16rem;
+        width: 16rem;
+        transition: all 0.3s ease-in-out;
     }
 }
