@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
    <!-- css link -->
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- jquery local version path -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <!-- bootstrap cdn -->
@@ -80,8 +81,8 @@
         </section>
       <div class="container lh-base hi">
         <section class="mt-5">
-          <h1 class="font-monospace">Hi</h1>
-          <p class="indent">I am a fourth-year graduating student at Iloilo Science and Technology University (ISAT U) and I am able to build a web presence from the ground up, from concept to navigation, layout, and programming UI, UX, and functions. I have knowledge in HTML, CSS, JavaScript, jQuery, PHP, Laravel, MYSQL, Bootstrap, and Tailwind. I am a fast learner, hardworking, and a team player. In my personal projects, I prefer that the code be clean, readable, and usable. I have also knowledge in database management and responsive design techniques. Additionally, I am familiar with version control systems, such as Git, and I am comfortable working with Windows  operating systems.</p>
+          <h1 class="font-monospace text-light">Hi</h1>
+          <p class="indent text-light">I am a fourth-year graduating student at Iloilo Science and Technology University (ISAT U) and I am able to build a web presence from the ground up, from concept to navigation, layout, and programming UI, UX, and functions. I have knowledge in HTML, CSS, JavaScript, jQuery, PHP, Laravel, MYSQL, Bootstrap, and Tailwind. I am a fast learner, hardworking, and a team player. In my personal projects, I prefer that the code be clean, readable, and usable. I have also knowledge in database management and responsive design techniques. Additionally, I am familiar with version control systems, such as Git, and I am comfortable working with Windows  operating systems.</p>
           <a href="https://drive.google.com/drive/folders/10Ki3ut0qQUHM5fbjkim3I61-ja-oo6Wr?usp=share_link" class="btn btn-outline-primary" id="resume">Download CV</a>
         </section>
         <hr>
@@ -89,16 +90,16 @@
         <!-- resume -->
         <br>
         <section class="resume" id="resumeC">
-          <h1 id="resumeH" class="font-monospace">Resume_</h1>
+          <h1 id="resumeH" class="font-monospace text-light">Resume_</h1>
           <br>
           <br>
-          <h3 class="font-monospace">Objectives</h3>
-          <p class="indent">A hardworking and self-motivated, driven graduating student seeking to apply for an internship where I can enhance my skills and knowledge about web development. I am eager to develop my problem-solving abilities and hone my creative approach to web development through the internship.</p>
+          <h3 class="font-monospace text-light">Objectives</h3>
+          <p class="indent text-light">A hardworking and self-motivated, driven graduating student seeking to apply for an internship where I can enhance my skills and knowledge about web development. I am eager to develop my problem-solving abilities and hone my creative approach to web development through the internship.</p>
 
           <br>
-          <h6 class="fw-semibold">EDUCATION</h6>
+          <h6 class="fw-semibold text-light">EDUCATION</h6>
           <br>
-          <div class="custompadding bg-light">
+          <div class="custompadding border border-primary rounded text-light">
             <p class="school fw-semibold text-primary ">ILOILO SCIENCE AND TECHNOLOGY UNIVERSITY</p>
             <p class="date fw-light">2019 - 2022</p>
             <p class="school" >Bachelor of Science in Information System</p>
@@ -118,18 +119,18 @@
           <section id="">
             <br>
             <br>
-            <h5 class="fw-semibold" id="">Awards</h5>
+            <h5 class="fw-semibold text-light" id="">Awards</h5>
             <br>
             <br>
-            <div class="awards bg-light rounded">
-              <div class="card mb-3">
+            <div class="awards">
+              <div class="card mb-3" data-aos="fade-up">
                 <img src="pictures/deanlist.jpg" class="card-img-top" alt="Cert">
                 <div class="card-body">
                   <h3 class="card-title fw-bold">Dean's Lister</h3>
                   <h5 class="card-title fw-bold">2019-2021</h5>
                 </div>
               </div>
-              <div class="card mb-3">
+              <div class="card mb-3" data-aos="fade-up">
                 <img src="pictures/champion.jpg" class="card-img-top" alt="Cert">
                 <div class="card-body">
                   <h3 class="card-title fw-bold">STI College Iloilo Science Fair Champion</h3>
@@ -140,9 +141,9 @@
           <!-- skills -->
           <br>
           <br>
-          <h6 class="fw-semibold">GENERAL SKILLS</h6>
+          <h6 class="fw-semibold text-light">GENERAL SKILLS</h6>
           <br>
-          <div class="semi-container bg-light p-5">
+          <div class="semi-container border border-primary rounded p-5 text-light">
             <p>HTML 5</p>
             <p>CSS 3</p>
             <p>JAVASCRIPT</p>
@@ -157,16 +158,16 @@
             <p id="projects">Lucid Chart</p>
           </div>
         </section>
-
+      </div>
           <!-- projects -->
           <br>
-        <section id="projectC">
+        <section id="projectC" class="p-5">
           <br>
-          <h1 class="font-monospace" id="projH">My Projects_</h1>
+          <h1 class="font-monospace text-light" id="projH">My Projects_</h1>
           <br>
           <br>
           <div class="projcontainer">
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="zoom-in-up">
               <img src="pictures/crudphp.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">Student Management System</h5>
@@ -180,7 +181,7 @@
                 <a href="https://github.com/OuieDev/student-management-system" class="btn btn-outline-primary">View Code</a>
               </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="zoom-in-up">
               <img src="pictures/crudlaravel.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">Student Management System</h5>
@@ -195,10 +196,9 @@
               </div>
             </div>
         </section>
-        <section id="projectC">
-          <br>
+        <section id="projectC" class="px-5">
           <div class="projcontainer">
-            <div class="card mb-3">
+            <div class="card mb-3"  data-aos="zoom-in-up">
               <img src="pictures/portfolio.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">Personal Portfolio</h5>
@@ -211,7 +211,7 @@
                 <a href="https://github.com/OuieDev/Louie-Jay-Cantores-Portfolio" class="btn btn-outline-primary">View Code</a>
               </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="zoom-in-up">
               <img src="pictures/loginsignup.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title fw-bold">Log in, Sign out</h5>
@@ -224,11 +224,11 @@
               </div>
             </div>
         </section>
-    </div>
+    
       
     <!-- Testimonials -->
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false"> 
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" data-aos="zoom-out-down"> 
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -237,7 +237,7 @@
       <div class="carousel-inner testcontainer">
         <div class="testcontainer1">
           <br>
-          <h1 class="font-monospace text-center">Testimonials_</h1>
+          <h1 class="font-monospace text-center text-light">Testimonials_</h1>
           <br>
           <div class="carousel-item active text-center ttext1">
             <div class="ttext">
@@ -289,14 +289,14 @@
       </button>
     </div>
     <!-- services -->
-    <section class="container">
+    <section class="p-5">
       <br>
       <br>
       <h5 class="fw-semibold" id="">Services</h5>
       <br>
       <br>
-      <div class="d-flex flex-column mb-3 bg-light p-5 rounded service">
-        <div class="bg-dark mb-3 p-5 rounded d-flex justify-content-between">
+      <div class="d-flex flex-column mb-3 service">
+        <div class="bg-dark mb-3 p-5 rounded d-flex justify-content-between border border-primary p-5 rounded" data-aos="zoom-out-right">
           <div class="card-body">
             <div>
               <i class="fa-solid fa-table-columns text-light fa-4x mb-5"></i>
@@ -308,7 +308,7 @@
         </div>
         <br>
         <br>
-        <div class="bg-dark mb-3 p-5 rounded d-flex justify-content-between">
+        <div class="bg-dark mb-3 p-5 rounded d-flex justify-content-between border border-primary p-5 rounded" data-aos="zoom-out-right">
           <div class="card-body">
             <div>
               <i class="fa-solid fa-server text-light fa-4x mb-5"></i> 
@@ -320,7 +320,7 @@
         </div>
         <br>
         <br>
-        <div class="bg-dark mb-3 p-5 rounded d-flex justify-content-between">
+        <div class="bg-dark mb-3 p-5 rounded d-flex justify-content-between border border-primary p-5 rounded" data-aos="zoom-out-right">
           <div class="card-body">
             <div>
               <i class="fa-regular fa-object-group text-light fa-4x mb-5"></i>
@@ -334,6 +334,8 @@
     </section>
   </div>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init(); </script>
 </body>
 
 <!-- footer -->
@@ -343,9 +345,9 @@
   <br>
   <br>
   <br>
-  <h1 class="font-monospace text-center" id="contactH">Contact_</h1>
+  <h1 class="font-monospace text-center text-light" id="contactH">Contact_</h1>
   <br>
-  <section class="pt-5 p-5 footer center">
+  <section class="pt-5 footer center">
     <br>
         <p class="opacity-50 lh-1"><i class="fa-solid fa-phone fa-2x"></i></p>
         <p class=" lh-1">0909-151-3512</p>

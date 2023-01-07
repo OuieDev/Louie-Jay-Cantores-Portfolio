@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     /* margin-bottom: 10%; */
 }
+body {
+    background-color: rgb(16, 16, 16, 0.9)  !important;
+}
 .wrapper{
     margin: 0px;
     padding: 0px;
@@ -88,6 +91,7 @@
 .footer{
     background: rgb(45, 44, 66);
     color: white;
+    width: 100%;
 }
 .footer a{
     color: white;
@@ -120,6 +124,7 @@
 }
 .ttext{
     background-color:rgb(41,37,110, 0.7); 
+    border: #fafafa 1px solid;
     /* opacity: 0.5;  */
     position: relative; 
     /* width: 100%;  */
@@ -128,14 +133,10 @@
     width: 100%;
     border-radius: 25px 25px 0px 25px;
 }
-.awards{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-}
+
 .awards{
     display: block;
-    padding: 5%;
+    padding: 7%;
 }
 .service h5{
     font-size: 0.8rem;
@@ -167,11 +168,11 @@
         background: #fafafa;
         border-radius: 10px;
         transition: all 1s ease-in-out;
-        transform: scale(1);
+        /* transform: scale(1); */
     }
-    .card:hover{
+    /* .card:hover{
         transform: scale(1.2);
-    }
+    } */
     .awards{
         display: flex;
         justify-content: center;
