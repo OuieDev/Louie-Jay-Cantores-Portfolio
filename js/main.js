@@ -48,10 +48,9 @@ $('.floatingimage').animate({
 
 //para sa about me
     $("#aboutmeN").click(function(){
-        
-        $('html, body').animate({
-          scrollTop: $('#aboutmeC').offset().top - 300
-        }, 1500);
+      $('html, body').animate({
+        scrollTop: $('#aboutmeC').offset().top - 300
+      }, 1500);
     });
 //para sa resume
     $("#resumeN").click(function(){
@@ -59,22 +58,22 @@ $('.floatingimage').animate({
       $('html, body').animate({
         scrollTop: $('#resumeC').offset().top - 100
       }, 1500);
-                var text = 'Resume_';
-                var i = 0;
-                function del(){
-                    if(i <= text.length){
-                    $('#resumeH').html(''); //clear text before typing
-                    }
-                }
-                del();
-                function type(){
-                    if(i < text.length){
-                    $('#resumeH').delay(1000).append(text.charAt(i));
-                    i++;
-                    setTimeout(type, 150);
-                    }
-                }
-                setTimeout(type, 1000);
+        var text = 'Resume_';
+        var i = 0;
+        function del(){
+            if(i <= text.length){
+            $('#resumeH').html(''); //clear text before typing
+            }
+        }
+        del();
+        function type(){
+            if(i < text.length){
+            $('#resumeH').delay(1000).append(text.charAt(i));
+            i++;
+            setTimeout(type, 150);
+            }
+        }
+        setTimeout(type, 1000);
     });
 //para sa project
     $("#projectsN").click(function(){
@@ -82,22 +81,22 @@ $('.floatingimage').animate({
       $('html, body').animate({
         scrollTop: $('#projH').offset().top - 100
       }, 1500);
-                var text = 'My Projects_';
-                var i = 0;
-                function del(){
-                    if(i <= text.length){
-                    $('#projH').html(''); //clear text before typing
-                    }
-                }
-                del();
-                function type(){
-                    if(i < text.length){
-                    $('#projH').delay(1000).append(text.charAt(i));
-                    i++;
-                    setTimeout(type, 150);
-                    }
-                }
-                setTimeout(type, 500);
+        var text = 'My Projects_';
+        var i = 0;
+        function del(){
+            if(i <= text.length){
+            $('#projH').html(''); //clear text before typing
+            }
+        }
+        del();
+        function type(){
+            if(i < text.length){
+            $('#projH').delay(1000).append(text.charAt(i));
+            i++;
+            setTimeout(type, 150);
+            }
+        }
+        setTimeout(type, 500);
     });
 
 //para sa testimonials
@@ -113,75 +112,44 @@ $('.floatingimage').animate({
       $('html, body').animate({
         scrollTop: $('#footerC').offset().top - 100
       }, 1500);
-                var text = 'Contact_';
-                var i = 0;
-                function del(){
-                    if(i <= text.length){
-                    $('#contactH').html(''); //clear text before typing
-                    }
-                }
-                del();
-                function type(){
-                    if(i < text.length){
-                    $('#contactH').delay(1000).append(text.charAt(i));
-                    i++;
-                    setTimeout(type, 150);
-                    }
-                }
-                function istap(){
-                  $('#footerC').click(function () {
-                    return true;
-                }); 
-                }
-                setTimeout(type, 1500);   
+        var text = 'Contact_';
+        var i = 0;
+        function del(){
+            if(i <= text.length){
+            $('#contactH').html(''); //clear text before typing
+            }
+        }
+        del();
+        function type(){
+            if(i < text.length){
+            $('#contactH').delay(1000).append(text.charAt(i));
+            i++;
+            setTimeout(type, 150);
+            }
+        }
+        function istap(){
+          $('#footerC').click(function () {
+            return true;
+        }); 
+        }
+        setTimeout(type, 1500);   
+    });
+
+  //para sa discription mag show kag mag hide sang text
+    $('.discription2').hide();
+    $('p').on('click', function(event) {
+      let this_ = $(this);
+      if (this_.hasClass('discription1')) {
+        this_.hide();
+        this_.next().first().show();
+      } else if(this_.hasClass('discription2')) {
+        this_.hide();
+        this_.prev().first().show();
+      }
     });
 
 });
 
-        // para ni ya kung saiban nga file ang imo nga i navigate
-        // var page_url = window.location.href; //get the url of current page
-        // var page_id = page_url.substring(page_url.lastIndexOf("#") + 1); //
-        
-        // if(page_id == "projects"){
-        //     $("html ,body").animate({
-        //         scrollTop: $("#scroll-" + page_id).offset().top + 100
-        //     }, 1000, function(){
-        //         alert('This is an alert message!');
-        //     });
-        // }
-
-        // alert("page_id");
-
-    // sa animation
-  //   $(window).scroll(function(){
-  //     $("#aboutmeC, #projH, #projectC ,#carouselExampleCaptions, #footerC").each(function(){
-  //         var position = $(this).offset().top;
-
-  //         var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-  //         if( bottom_of_window > position ){
-  //             $(this).animate({  opacity: '1',
-  //             left: '0px'
-  //         }, 200, 'linear');
-  //         }
-
-  //         if( bottom_of_window < position ) {
-  //             $(this).animate({  opacity: '0',
-  //             left: '0px'
-  //         }, 200, 'linear');
-  //         }
-  //     }); 
-  // });
 
 
 
-
-
-// sa mag test
-// $(document).ready(function(){
-//     // jQuery:
-// $("#myButton").click(function(){
-//   alert('Button was clicked!');
-// });
-
-// });
