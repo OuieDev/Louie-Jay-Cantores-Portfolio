@@ -1,0 +1,8 @@
+.skills-card-image{
+    width: 120px;
+    height: 110px;
+}
+.skills-card:hover{
+    transform: translate(0%, 0%) scale(1.5);
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,17 @@
+.education-container{
+    padding: 8%;
+    padding-top: 2%;
+}
+
+.text-light{
+    color: white !important;
+}
+/* .education-section-bg{
+    background-color: rgb(14,42,71); 
+}*/
+.text-green{
+    color: rgb(211,183,20);
+}
+.text-brown{
+    color: rgb(188, 105, 17)
+}

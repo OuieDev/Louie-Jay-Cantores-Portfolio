@@ -13,6 +13,7 @@ $(window).scroll(function () {
     $('.header').css({'background-color': 'rgb(41,37,110);', 'transition': 'background-color 0.5s ease', 'background': 'linear-gradient(90deg, rgba(41,37,110,1) 0%, rgba(87,87,217,1) 53%, rgba(9,86,102,1) 100%)'}); 
   }
 
+  
   if (scrollPosition > 300) {
     $('#body').removeClass('body');
     $('#body').addClass('body2');
@@ -21,6 +22,15 @@ $(window).scroll(function () {
     $('#body').removeClass('body2');
     $('#body').addClass('body');
   }
+  
+  // if (scrollPosition > 300) {
+  //   $('#body').removeClass('body');
+  //   $('#body').addClass('body2');
+  // }
+  // else {
+  //   $('#body').removeClass('body2');
+  //   $('#body').addClass('body');
+  // }
 });
 //para sa ngalan
   var text = 'Louie Jay Cantores_';
@@ -58,7 +68,7 @@ $('.floatingimage').animate({
       $('html, body').animate({
         scrollTop: $('#resumeC').offset().top - 100
       }, 1500);
-        var text = 'Resume_';
+        var text = 'About Me_';
         var i = 0;
         function del(){
             if(i <= text.length){
