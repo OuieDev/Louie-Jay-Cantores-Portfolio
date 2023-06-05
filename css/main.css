@@ -148,8 +148,8 @@ body{
     padding: 7%;
 }
 .awards-container{
-    display: block !important;
-    margin-bottom: 2% !important;
+    display: block;
+    margin-bottom: 2%;
 }
 .service h5{
     font-size: 0.8rem;
@@ -175,6 +175,7 @@ body{
     .awards-container{
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
     }
     .projcontainer{
         display: flex;
