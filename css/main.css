@@ -173,8 +173,8 @@ body{
         transform: scale(1.2);
     }
     .awards-container{
-        display: flex !important;
-        justify-content: space-around !important;
+        display: flex;
+        justify-content: space-around;
     }
     .projcontainer{
         display: flex;
