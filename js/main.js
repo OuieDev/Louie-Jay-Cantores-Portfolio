@@ -23,14 +23,6 @@ $(window).scroll(function () {
     $('#body').addClass('body');
   }
   
-  // if (scrollPosition > 300) {
-  //   $('#body').removeClass('body');
-  //   $('#body').addClass('body2');
-  // }
-  // else {
-  //   $('#body').removeClass('body2');
-  //   $('#body').addClass('body');
-  // }
 });
 //para sa ngalan
   var text = 'Louie Jay Cantores_';
@@ -91,7 +83,7 @@ $('.floatingimage').animate({
       $('html, body').animate({
         scrollTop: $('#projH').offset().top - 100
       }, 1500);
-        var text = 'My Projects_';
+        var text = 'Projects_';
         var i = 0;
         function del(){
             if(i <= text.length){
@@ -155,6 +147,21 @@ $('.floatingimage').animate({
       } else if(this_.hasClass('discription2')) {
         this_.hide();
         this_.prev().first().show();
+      }
+    });
+
+    //para sa responsive data-aos
+
+    $(window).resize(function() {
+      var windowWidth = $(window).width();
+      if (windowWidth < 950) { // Specify your desired width condition
+        $('.educ-animate').attr('data-aos', 'zoom-in'); // Empty value to disable animation
+        $('.left-animate').attr('data-aos', 'flip-up'); // Empty value to disable animation
+        $('.right-animate').attr('data-aos', 'flip-up'); // Empty value to disable animation
+      } else {
+        $('.educ-animate').attr('data-aos', 'fade-right'); // Restore animation value
+        $('.left-animate').attr('data-aos', 'fade-left'); // Empty value to disable animation
+        $('.right-animate').attr('data-aos', 'fade-right'); // Empty value to disable animation
       }
     });
 
