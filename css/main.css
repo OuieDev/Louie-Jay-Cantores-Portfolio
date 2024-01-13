@@ -12,9 +12,18 @@ body{
     /* background-color: rgb(16, 16, 16, 0.9)  !important; */
     background-color:#70f397   !important;
 }
+.deep-blue{
+    /* background-color: rgb(16, 16, 16, 0.9)  !important; */
+    color:#007bff   !important;
+}
+/* .body2{ */
+    /* background-color: rgb(16, 16, 16, 0.9)  !important; */
+    /* background-color:#eeecec    !important; */
+/* } */
+
 .body2{
     /* background-color: rgb(16, 16, 16, 0.9)  !important; */
-    background-color:#eeecec    !important;
+    background-color:#f8f9fa    !important;
 }
 .wrapper{
     margin: 0px;
